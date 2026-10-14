@@ -12,4 +12,4 @@ Personal site for Andrew DeGarmo. Plain HTML/CSS, no build step, deployed to Git
 
 ## Editing
 Everything lives in `index.html`. Colors and fonts are CSS variables at the top of the `<style>` block.
-To self-host the headshot, add it as `assets/andrew-degarmo.png` and update the `<img src>` and `og:image`.
+The headshot lives at `assets/andrew-degarmo.webp` (800×800).

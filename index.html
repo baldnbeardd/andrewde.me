@@ -12,7 +12,7 @@
   <meta property="og:title" content="Andrew DeGarmo">
   <meta property="og:description" content="Director of CRM Systems & Data Architecture. Salesforce, AI and data systems that move fundraising.">
   <meta property="og:url" content="https://andrewde.me/">
-  <meta property="og:image" content="https://cdn.convertri.com/408e1be2-f4de-11e9-99fe-0697e5ca793e%2F86ef67a01d8a2e5a3fc07d6d4259e50221d0e9f8%2FAndrew_DeGarmo-headshot_large_large.png">
+  <meta property="og:image" content="https://andrewde.me/assets/andrew-degarmo.webp">
   <meta name="twitter:card" content="summary">
   <meta name="theme-color" content="#1E4D3B">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -97,9 +97,9 @@
 
     /* Hero */
     .hero { padding: clamp(32px, 7vw, 96px) 0 clamp(56px, 9vw, 120px); }
-    .hero .wrap { display: grid; grid-template-columns: 1.35fr 0.65fr; gap: clamp(32px, 6vw, 80px); align-items: end; }
+    .hero .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, 340px); gap: clamp(32px, 6vw, 80px); align-items: end; }
     .hero h1 {
-      font-size: clamp(3.6rem, 12.5vw, 10.5rem);
+      font-size: clamp(3.6rem, 11vw, 9.25rem);
       font-weight: 800;
       letter-spacing: -0.045em;
       line-height: 0.86;
@@ -119,7 +119,7 @@
       background: var(--marigold); border-radius: 180px 180px 8px 8px;
     }
     .portrait img {
-      position: relative; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top;
+      position: relative; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top;
       border-radius: 180px 180px 8px 8px; background: var(--mist);
     }
     .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
@@ -236,7 +236,7 @@
           </div>
         </div>
         <figure class="portrait" style="margin:0">
-          <img src="https://cdn.convertri.com/408e1be2-f4de-11e9-99fe-0697e5ca793e%2F86ef67a01d8a2e5a3fc07d6d4259e50221d0e9f8%2FAndrew_DeGarmo-headshot_large_large.png" alt="Portrait of Andrew DeGarmo" width="360" height="450">
+          <img src="assets/andrew-degarmo.webp" alt="Portrait of Andrew DeGarmo" width="800" height="800" fetchpriority="high">
         </figure>
       </div>
     </section>
