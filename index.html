@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andrew DeGarmo</title>
+  <meta name="description" content="Andrew DeGarmo — Director of CRM Systems & Data Architecture at Michigan State University Advancement. Salesforce, Kindsight Ascend, Agentforce AI and data architecture that moves fundraising.">
+  <meta name="author" content="Andrew DeGarmo">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://andrewde.me/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Andrew DeGarmo">
+  <meta property="og:description" content="Director of CRM Systems & Data Architecture. Salesforce, AI and data systems that move fundraising.">
+  <meta property="og:url" content="https://andrewde.me/">
+  <meta property="og:image" content="https://cdn.convertri.com/408e1be2-f4de-11e9-99fe-0697e5ca793e%2F86ef67a01d8a2e5a3fc07d6d4259e50221d0e9f8%2FAndrew_DeGarmo-headshot_large_large.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#1E4D3B">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Andrew DeGarmo",
+    "jobTitle": "Director of CRM Systems & Data Architecture",
+    "worksFor": { "@type": "Organization", "name": "Michigan State University" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Grand Rapids", "addressRegion": "MI" },
+    "url": "https://andrewde.me/",
+    "sameAs": ["https://www.linkedin.com/in/adegarmo/"]
+  }
+  </script>
+  <style>
+    :root {
+      --paper: #F3F5F2;
+      --ink: #16201B;
+      --ink-soft: #46524B;
+      --pine: #1E4D3B;
+      --pine-deep: #143528;
+      --marigold: #E8A317;
+      --mist: #DCE3DD;
+      --on-pine: #F3F5F2;
+      --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+      --serif: "Source Serif 4", Georgia, serif;
+      --gutter: clamp(16px, 5vw, 64px);
+      --max: 1180px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --paper: #101814;
+        --ink: #E8EDE9;
+        --ink-soft: #A8B5AD;
+        --pine: #2C6B53;
+        --pine-deep: #0B1410;
+        --mist: #24312A;
+        --on-pine: #F3F5F2;
+      }
+    }
+    :root[data-theme="dark"] {
+      --paper: #101814; --ink: #E8EDE9; --ink-soft: #A8B5AD;
+      --pine: #2C6B53; --pine-deep: #0B1410; --mist: #24312A; --on-pine: #F3F5F2;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 1.125rem;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--marigold); outline-offset: 3px; border-radius: 2px; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+    h1, h2, h3 { font-family: var(--display); line-height: 1.02; margin: 0; letter-spacing: -0.02em; }
+    p { margin: 0 0 1em; max-width: 62ch; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--marigold); color: #16201B; padding: 8px 14px; z-index: 10; }
+    .skip:focus { left: 8px; top: 8px; }
+
+    /* Header */
+    .site-head { padding: 22px 0; }
+    .site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .mark {
+      font-family: var(--display); font-weight: 800; font-size: 1.05rem; text-decoration: none;
+      display: inline-grid; place-items: center; width: 42px; height: 42px;
+      background: var(--pine); color: var(--on-pine); border-radius: 50%;
+    }
+    .site-head nav { display: flex; gap: clamp(14px, 3vw, 32px); font-family: var(--display); font-size: 0.98rem; }
+    .site-head nav a { text-decoration: none; color: var(--ink-soft); }
+    .site-head nav a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px; text-decoration-color: var(--marigold); }
+
+    /* Hero */
+    .hero { padding: clamp(32px, 7vw, 96px) 0 clamp(56px, 9vw, 120px); }
+    .hero .wrap { display: grid; grid-template-columns: 1.35fr 0.65fr; gap: clamp(32px, 6vw, 80px); align-items: end; }
+    .hero h1 {
+      font-size: clamp(3.6rem, 12.5vw, 10.5rem);
+      font-weight: 800;
+      letter-spacing: -0.045em;
+      line-height: 0.86;
+      font-variation-settings: "opsz" 96;
+    }
+    .hero h1 span { display: block; }
+    .hero h1 .last { color: var(--pine); }
+    .role {
+      font-family: var(--display); font-size: clamp(1.15rem, 2.2vw, 1.5rem); font-weight: 600;
+      margin: clamp(24px, 3vw, 36px) 0 18px; max-width: 30ch; line-height: 1.25;
+    }
+    .role small { display: block; font-weight: 400; color: var(--ink-soft); font-size: 0.82em; margin-top: 6px; }
+    .lede { font-size: 1.2rem; color: var(--ink-soft); }
+    .portrait { position: relative; justify-self: end; width: min(100%, 360px); }
+    .portrait::before {
+      content: ""; position: absolute; inset: 18px -18px -18px 18px;
+      background: var(--marigold); border-radius: 180px 180px 8px 8px;
+    }
+    .portrait img {
+      position: relative; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top;
+      border-radius: 180px 180px 8px 8px; background: var(--mist);
+    }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .btn {
+      font-family: var(--display); font-weight: 600; font-size: 1rem; text-decoration: none;
+      padding: 14px 24px; border-radius: 999px; border: 2px solid var(--ink); display: inline-block;
+      transition: background-color .15s, color .15s;
+    }
+    .btn-solid { background: var(--ink); color: var(--paper); }
+    .btn-solid:hover { background: var(--pine); border-color: var(--pine); color: var(--on-pine); }
+    .btn-ghost:hover { background: var(--ink); color: var(--paper); }
+
+    /* Sections */
+    section { scroll-margin-top: 24px; }
+    .section-head { display: grid; grid-template-columns: 1fr 1.6fr; gap: clamp(24px, 5vw, 64px); align-items: baseline; margin-bottom: clamp(36px, 5vw, 56px); }
+    .section-head h2 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800; }
+    .section-head p { color: var(--ink-soft); margin: 0; }
+
+    /* About / traits */
+    .about { padding: clamp(64px, 9vw, 120px) 0; border-top: 1px solid var(--mist); }
+    .traits { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(36px, 5vw, 64px) clamp(32px, 6vw, 88px); }
+    .trait { border-top: 6px solid var(--pine); padding-top: 22px; }
+    .trait h3 { font-size: clamp(1.5rem, 2.6vw, 2rem); font-weight: 600; margin-bottom: 12px; }
+    .trait p { color: var(--ink-soft); margin: 0; }
+
+    /* Skills */
+    .skills { padding: clamp(64px, 9vw, 112px) 0; background: var(--mist); }
+    .skill-cloud {
+      list-style: none; padding: 0; margin: 0;
+      display: flex; flex-wrap: wrap; gap: 0.15em 0.5em;
+      font-family: var(--display); font-weight: 800; letter-spacing: -0.03em;
+      font-size: clamp(2rem, 6.4vw, 5rem); line-height: 1.08;
+    }
+    .skill-cloud li:not(:last-child)::after { content: " /"; color: var(--pine); font-weight: 400; }
+    .skill-cloud .wink { color: var(--pine); font-style: normal; }
+    .skill-note { margin-top: 32px; color: var(--ink-soft); }
+
+    /* Achievements */
+    .work { padding: clamp(64px, 9vw, 120px) 0; }
+    .feature {
+      display: grid; grid-template-columns: auto 1fr; gap: clamp(24px, 5vw, 64px); align-items: center;
+      padding-bottom: clamp(40px, 6vw, 64px); margin-bottom: clamp(40px, 6vw, 64px); border-bottom: 1px solid var(--mist);
+    }
+    .big-number {
+      font-family: var(--display); font-weight: 800; letter-spacing: -0.05em; line-height: 0.85;
+      font-size: clamp(5rem, 15vw, 12rem); color: var(--pine);
+    }
+    .big-number sup { font-size: 0.35em; vertical-align: 1.35em; letter-spacing: 0; margin-left: 0.04em; color: var(--marigold); }
+    .feature p { font-size: clamp(1.15rem, 1.8vw, 1.35rem); margin: 0; }
+    .feature strong { font-family: var(--display); font-weight: 600; }
+    .wins { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 36px clamp(32px, 6vw, 88px); }
+    .wins h3 { font-size: 1.3rem; font-weight: 600; margin-bottom: 8px; }
+    .wins p { color: var(--ink-soft); margin: 0; }
+
+    /* Contact */
+    .contact { background: var(--pine-deep); color: var(--on-pine); padding: clamp(72px, 11vw, 140px) 0; }
+    .contact h2 { font-size: clamp(2.6rem, 8vw, 6.4rem); font-weight: 800; letter-spacing: -0.045em; line-height: 0.92; max-width: 12ch; }
+    .contact p { color: rgba(243,245,242,.75); font-size: 1.2rem; margin-top: 24px; }
+    .contact .btn { border-color: var(--on-pine); color: var(--on-pine); }
+    .contact .btn-solid { background: var(--marigold); border-color: var(--marigold); color: #16201B; }
+    .contact .btn-solid:hover { background: var(--on-pine); border-color: var(--on-pine); color: #16201B; }
+    .contact .btn-ghost:hover { background: var(--on-pine); color: #16201B; }
+
+    footer { background: var(--pine-deep); color: rgba(243,245,242,.6); font-size: 0.95rem; padding: 0 0 40px; }
+    footer .wrap { border-top: 1px solid rgba(243,245,242,.15); padding-top: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+    footer p { margin: 0; }
+
+    /* Load moment: the name sets itself */
+    @media (prefers-reduced-motion: no-preference) {
+      .hero h1 span { animation: rise .8s cubic-bezier(.2,.7,.2,1) both; }
+      .hero h1 .last { animation-delay: .12s; }
+      .portrait::before { animation: slide .9s .25s cubic-bezier(.2,.7,.2,1) both; }
+      @keyframes rise { from { opacity: 0; transform: translateY(0.25em); } to { opacity: 1; transform: none; } }
+      @keyframes slide { from { transform: translate(-18px, -18px); } to { transform: none; } }
+    }
+
+    @media (max-width: 860px) {
+      .hero .wrap { grid-template-columns: 1fr; }
+      .portrait { justify-self: start; width: min(72%, 300px); order: -1; }
+      .section-head, .feature { grid-template-columns: 1fr; }
+      .traits, .wins { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 520px) {
+      .site-head nav a.hide-sm { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-head">
+    <div class="wrap">
+      <a class="mark" href="#top" aria-label="Andrew DeGarmo, home">AD</a>
+      <nav aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#skills" class="hide-sm">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap">
+        <div>
+          <h1><span>Andrew</span><span class="last">DeGarmo</span></h1>
+          <p class="role">Director of CRM Systems &amp; Data Architecture
+            <small>University Advancement, Michigan State University</small></p>
+          <p class="lede">I build the systems that help fundraisers raise more. Salesforce, Kindsight Ascend, Agentforce AI and the data underneath them, designed to scale and actually get used.</p>
+          <div class="actions">
+            <a class="btn btn-solid" href="#contact">Get in touch</a>
+            <a class="btn btn-ghost" href="https://drive.google.com/file/d/1yBhukJkiFvSYwruMZnq0ZJ_11FlR0skK/view?usp=sharing" target="_blank" rel="noopener">View résumé</a>
+          </div>
+        </div>
+        <figure class="portrait" style="margin:0">
+          <img src="https://cdn.convertri.com/408e1be2-f4de-11e9-99fe-0697e5ca793e%2F86ef67a01d8a2e5a3fc07d6d4259e50221d0e9f8%2FAndrew_DeGarmo-headshot_large_large.png" alt="Portrait of Andrew DeGarmo" width="360" height="450">
+        </figure>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="about-title">What defines me</h2>
+          <p>A catalyst for growth, an advocate of change, and a relentless explorer of untapped possibilities, with a career that runs through SaaS and PaaS, higher ed, finance, government relations and the music industry.</p>
+        </div>
+        <div class="traits">
+          <article class="trait">
+            <h3>Tech trailblazer</h3>
+            <p>I started out writing .NET solutions and grew into technical leadership. Along the way I've built scalable systems and kept bringing new technology, now AI, into traditional business applications.</p>
+          </article>
+          <article class="trait">
+            <h3>Strategic visionary</h3>
+            <p>Across higher ed, finance, government relations and music, I've helped organizations find better processes and bolder directions. I'm always watching for the next wave.</p>
+          </article>
+          <article class="trait">
+            <h3>People steward</h3>
+            <p>Leadership is about helping others do their best work. An empathetic approach and a healthy dose of hindsight have helped me build a team that consistently exceeds expectations.</p>
+          </article>
+          <article class="trait">
+            <h3>Adventurer</h3>
+            <p>Wanderlust has taken me to more than a few corners of the globe, literally and figuratively. Cross-cultural work has given me a deep appreciation for the richness of diversity.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="skills-title">Core competencies</h2>
+          <p>The toolkit, technical and otherwise.</p>
+        </div>
+        <ul class="skill-cloud">
+          <li>Salesforce</li>
+          <li>Agentforce AI</li>
+          <li>Data architecture</li>
+          <li>Microsoft</li>
+          <li>Leadership</li>
+          <li>Strategy</li>
+          <li>Process improvement</li>
+          <li>Creative</li>
+          <li>Entrepreneurial</li>
+          <li class="wink">Sense of humor</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="work-title">Notable achievements</h2>
+          <p>Technology aligned with the mission, measured by what it made possible.</p>
+        </div>
+
+        <div class="feature">
+          <div class="big-number" aria-label="130.5 million dollars">$130.5<sup>M</sup></div>
+          <p><strong>Raised in a single year.</strong> I led the application development behind the most successful campaign in MSU's history, <em>Spartans Will</em>, which broke every previous annual fundraising record.</p>
+        </div>
+
+        <ul class="wins">
+          <li>
+            <h3>Enterprise Salesforce and Teams adoption</h3>
+            <p>Championed organization-wide rollout of Salesforce CRM and Microsoft Teams, transforming efficiency and keeping people working together through the pandemic and beyond.</p>
+          </li>
+          <li>
+            <h3>AI in CRM operations</h3>
+            <p>Integrating AI into CRM work, including Agentforce pilots, to sharpen data-driven decisions and set the organization up for scalable innovation.</p>
+          </li>
+          <li>
+            <h3>Custom help desk platform</h3>
+            <p>Architected and launched a ticketing platform with intelligent automation and full KPI tracking that changed how IT support gets delivered.</p>
+          </li>
+          <li>
+            <h3>A culture of excellence</h3>
+            <p>Built a high-performance, innovative team by tying every technology initiative directly to core business goals.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 id="contact-title">Let's build something worth talking about.</h2>
+        <p>Have a CRM challenge, an AI idea or a speaking invite? I'd like to hear it.</p>
+        <div class="actions">
+          <a class="btn btn-solid" href="https://www.linkedin.com/in/adegarmo/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+          <a class="btn btn-ghost" href="https://drive.google.com/file/d/1yBhukJkiFvSYwruMZnq0ZJ_11FlR0skK/view?usp=sharing" target="_blank" rel="noopener">View résumé</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© <span id="yr">2026</span> Andrew DeGarmo</p>
+      <p>Grand Rapids, Michigan</p>
+    </div>
+  </footer>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
